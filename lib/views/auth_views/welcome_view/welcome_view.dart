@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:plant_a_tree/views/auth_views/widgets/widgets.dart';
 import 'package:plant_a_tree/views/widgets/widgets.dart';
 
-class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+class WelcomeView extends StatefulWidget {
+  const WelcomeView({Key? key}) : super(key: key);
 
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  _WelcomeViewState createState() => _WelcomeViewState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> {
+class _WelcomeViewState extends State<WelcomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
