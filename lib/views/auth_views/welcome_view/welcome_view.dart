@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:plant_a_tree/views/auth_views/sign_in_view/sign_in_view.dart';
+import 'package:plant_a_tree/views/auth_views/sign_up_view/sign_up_view.dart';
 import 'package:plant_a_tree/views/auth_views/widgets/widgets.dart';
 import 'package:plant_a_tree/views/widgets/widgets.dart';
 
@@ -59,19 +61,40 @@ class _WelcomeViewState extends State<WelcomeView> {
               const SizedBox(height: 20),
               PrimaryButton(
                 title: "Create Account",
-                onPress: () {},
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SignUpView(),
+                    ),
+                  );
+                },
               ),
               const SizedBox(height: 40),
               Row(
                 children: [
-                  const Text("Already have an account?"),
+                  const Text(
+                    "Already have an account?",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
                   const SizedBox(width: 10),
                   GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignInView(),
+                        ),
+                      );
+                    },
                     child: Text(
                       "Log In",
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.bold,
+                        fontSize: 18,
                       ),
                     ),
                   ),

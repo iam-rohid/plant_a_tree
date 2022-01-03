@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_a_tree/configs/configs.dart';
-import 'package:plant_a_tree/views/auth_views/auth_views.dart';
+import 'package:plant_a_tree/views/views.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       darkTheme: darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const WelcomeView(),
+      home: const HomeView(),
     );
   }
 }
