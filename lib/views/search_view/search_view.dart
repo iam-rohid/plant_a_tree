@@ -22,7 +22,7 @@ class _SearchViewState extends State<SearchView> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 20.0,
+              horizontal: 10.0,
               vertical: 10.0,
             ),
             child: Row(
@@ -69,11 +69,16 @@ class _SearchViewState extends State<SearchView> {
           Expanded(
             child: GridView.builder(
               itemCount: 20,
-              padding: const EdgeInsets.all(20),
+              padding: EdgeInsets.only(
+                left: 10,
+                right: 10,
+                top: 10,
+                bottom: MediaQuery.of(context).padding.bottom + 10,
+              ),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisSpacing: 20,
-                crossAxisSpacing: 20,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
                 childAspectRatio: .65,
               ),
               keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

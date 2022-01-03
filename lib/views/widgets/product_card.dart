@@ -57,8 +57,8 @@ class ProductCard extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  width: 24,
-                  height: 24,
+                  width: 32,
+                  height: 32,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     color: Theme.of(context).colorScheme.primary,
@@ -66,8 +66,8 @@ class ProductCard extends StatelessWidget {
                   child: Center(
                     child: Image.asset(
                       "assets/icons/favorite.png",
-                      width: 16,
-                      height: 16,
+                      width: 20,
+                      height: 20,
                       color: Theme.of(context).colorScheme.onPrimary,
                     ),
                   ),
@@ -77,7 +77,7 @@ class ProductCard extends StatelessWidget {
                   "৳ 220",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
                 )

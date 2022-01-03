@@ -33,7 +33,7 @@ class _HomeViewState extends State<HomeView> {
                   // Search Bar
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0,
+                      horizontal: 10.0,
                       vertical: 10.0,
                     ),
                     child: GestureDetector(
