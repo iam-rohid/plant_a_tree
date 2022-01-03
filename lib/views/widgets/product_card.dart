@@ -29,7 +29,7 @@ class ProductCard extends StatelessWidget {
               ),
               clipBehavior: Clip.antiAlias,
               child: Image.network(
-                "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "https://images.unsplash.com/photo-1512428813834-c702c7702b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
                 fit: BoxFit.cover,
               ),
             ),

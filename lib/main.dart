@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       darkTheme: darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      home: const TabView(),
     );
   }
 }

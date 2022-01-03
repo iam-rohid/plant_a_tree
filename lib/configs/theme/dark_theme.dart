@@ -5,6 +5,7 @@ final darkTheme = ThemeData.dark().copyWith(
   colorScheme: _colorScheme,
   scaffoldBackgroundColor: _colorScheme.surface,
   appBarTheme: getAppBarTheme(_colorScheme),
+  bottomNavigationBarTheme: getBottomNavigationBarThemeData(_colorScheme),
 );
 
 final _colorScheme = const ColorScheme.dark().copyWith(

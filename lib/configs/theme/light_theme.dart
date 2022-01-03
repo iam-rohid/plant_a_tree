@@ -5,6 +5,7 @@ final lightTheme = ThemeData.light().copyWith(
   colorScheme: _colorScheme,
   scaffoldBackgroundColor: _colorScheme.surface,
   appBarTheme: getAppBarTheme(_colorScheme),
+  bottomNavigationBarTheme: getBottomNavigationBarThemeData(_colorScheme),
 );
 
 final _colorScheme = const ColorScheme.light().copyWith(

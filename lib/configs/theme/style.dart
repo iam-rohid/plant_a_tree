@@ -13,3 +13,27 @@ AppBarTheme getAppBarTheme(ColorScheme colorScheme) {
     ),
   );
 }
+
+BottomNavigationBarThemeData getBottomNavigationBarThemeData(
+    ColorScheme colorScheme) {
+  return BottomNavigationBarThemeData(
+    elevation: 0,
+    type: BottomNavigationBarType.fixed,
+    backgroundColor: colorScheme.background,
+    selectedIconTheme: IconThemeData(color: colorScheme.primary),
+    selectedItemColor: colorScheme.primary,
+    unselectedItemColor: colorScheme.onBackground.withOpacity(0.5),
+    unselectedIconTheme: IconThemeData(
+      color: colorScheme.onBackground.withOpacity(0.5),
+    ),
+    enableFeedback: false,
+    selectedLabelStyle: TextStyle(
+      fontSize: 12,
+      color: colorScheme.primary,
+    ),
+    unselectedLabelStyle: TextStyle(
+      fontSize: 12,
+      color: colorScheme.onBackground.withOpacity(0.5),
+    ),
+  );
+}
