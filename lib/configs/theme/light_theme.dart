@@ -10,7 +10,7 @@ final lightTheme = ThemeData.light().copyWith(
 final _colorScheme = const ColorScheme.light().copyWith(
   primary: const Color(0xFF26A98F),
   onPrimary: const Color(0xFFFFFFFF),
-  surface: const Color(0xFFFAFAFA),
+  surface: const Color(0xFFF9F9F9),
   onSurface: const Color(0xFF000000),
   background: const Color(0xFFffffff),
   onBackground: const Color(0xFF000000),
